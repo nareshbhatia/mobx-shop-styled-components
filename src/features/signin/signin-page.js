@@ -5,9 +5,7 @@ export class SigninPage extends React.Component {
     render() {
         return (
             <HeaderLayout>
-                <CenteredContainer>
-                    Sign In
-                </CenteredContainer>
+                <CenteredContainer>Sign In</CenteredContainer>
             </HeaderLayout>
         );
     }

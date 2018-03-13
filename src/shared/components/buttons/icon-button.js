@@ -23,16 +23,17 @@ export const IconButton = styled.button`
     color: inherit;
     '&::-moz-focus-inner': {
         border-style: none; // Remove Firefox dotted outline.
-    };
+    }
     text-align: center;
     flex: 0 0 auto;
     font-size: ${props => props.theme.typography.pxToRem(24)}px;
     width: ${props => props.theme.spacing.unit * 6}px;
     height: ${props => props.theme.spacing.unit * 6}px;
     color: ${props => getColor(props.color)};
-    transition: ${props => props.theme.transitions.create('background-color', {
-        duration: props.theme.transitions.duration.shortest
-    })};
+    transition: ${props =>
+        props.theme.transitions.create('background-color', {
+            duration: props.theme.transitions.duration.shortest
+        })};
 `;
 
 function getColor(colorProp = 'default', theme) {

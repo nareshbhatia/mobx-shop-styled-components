@@ -1,10 +1,15 @@
 import React from 'react';
 import { inject } from 'mobx-react';
-import { ItemList, HeaderLayout, ScrollingContent, Title } from 'shared/components';
+import {
+    ItemList,
+    HeaderLayout,
+    ScrollingContent,
+    Title
+} from 'shared/components';
 
 const ContentTitle = Title.extend`
     padding: 8px 0 0 16px;
-    font-weight: normal
+    font-weight: normal;
 `;
 
 @inject('rootStore')

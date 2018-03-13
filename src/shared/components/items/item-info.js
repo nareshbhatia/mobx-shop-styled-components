@@ -26,9 +26,7 @@ export function ItemInfo({ item }) {
         <InfoContainer>
             <ItemName>{item.name}</ItemName>
             <BodyText>by {item.manufacturer}</BodyText>
-            <ItemPrice>
-                {CurrencyUtils.toString(item.price, 'USD')}
-            </ItemPrice>
+            <ItemPrice>{CurrencyUtils.toString(item.price, 'USD')}</ItemPrice>
         </InfoContainer>
     );
 }

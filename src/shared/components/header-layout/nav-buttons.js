@@ -15,10 +15,7 @@ import { history } from 'shared/utils';
 export class HomeButton extends React.Component {
     render() {
         return (
-            <IconButton
-                color="inherit"
-                onClick={this.handleHomeClicked}
-            >
+            <IconButton color="inherit" onClick={this.handleHomeClicked}>
                 <Apps />
             </IconButton>
         );
@@ -36,10 +33,7 @@ export class HomeButton extends React.Component {
 export class BackButton extends React.Component {
     render() {
         return (
-            <IconButton
-                color="inherit"
-                onClick={history.goBack}
-            >
+            <IconButton color="inherit" onClick={history.goBack}>
                 <ArrowBack />
             </IconButton>
         );

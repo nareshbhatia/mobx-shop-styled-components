@@ -5,7 +5,7 @@ export const Title = styled.h2`
     margin: 0;
     font-size: 21px;
     font-weight: ${props => props.theme.typography.fontWeightMedium};
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     color: ${props => getColor(props.color, props.theme)};
 `;
 
@@ -14,7 +14,7 @@ export const BodyText = styled.div`
     margin: 0;
     font-size: 14px;
     font-weight: ${props => props.theme.typography.fontWeightRegular};
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     color: ${props => getColor(props.color, props.theme)};
 `;
 

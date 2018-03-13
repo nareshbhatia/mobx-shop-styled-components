@@ -37,7 +37,8 @@ export const SvgIcon = styled.svg`
     width: 24px;
     user-select: none;
     flex-shrink: 0;
-    transition: ${props => props.theme.transitions.create('fill', {
-        duration: props.theme.transitions.duration.shorter
-    })};
+    transition: ${props =>
+        props.theme.transitions.create('fill', {
+            duration: props.theme.transitions.duration.shorter
+        })};
 `;

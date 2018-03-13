@@ -24,7 +24,7 @@ export const StyledButton = styled.button`
     color: inherit;
     &::-moz-focus-inner: {
         border-style: none; // Remove Firefox dotted outline.
-    };
+    }
     line-height: 1.4em; // Improve readability for multiline button.
     box-sizing: border-box;
     font-size: 14px;
@@ -32,24 +32,25 @@ export const StyledButton = styled.button`
     font-weight: 500;
     min-width: ${props => props.theme.spacing.unit * 11}px;
     min-height: 36px;
-    padding: ${props => props.theme.spacing.unit}px ${props => props.theme.spacing.unit * 2}px;
+    padding: ${props => props.theme.spacing.unit}px
+        ${props => props.theme.spacing.unit * 2}px;
     border-radius: 2px;
     color: ${props => getColor(props.color)};
-    transition: ${props => props.theme.transitions.create(
-        ['background-color', 'box-shadow'],
-        {
+    transition: ${props =>
+        props.theme.transitions.create(['background-color', 'box-shadow'], {
             duration: props.theme.transitions.duration.short
-        }
-    )};
+        })};
     &:hover {
         text-decoration: none;
         // Reset on mouse devices
-        background-color: ${props => fade(props.theme.palette.text.primary, 0.12)};
-        @media (hover: none): {
-            background-color: transparent
-        },
+        background-color: ${props =>
+            fade(props.theme.palette.text.primary, 0.12)};
+        @media (hover: none) : {
+            background-color: transparent;
+        }
+        ,
         &$disabled: {
-            background-color: transparent
+            background-color: transparent;
         }
     }
 `;

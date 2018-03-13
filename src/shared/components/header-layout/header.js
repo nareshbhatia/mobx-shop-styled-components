@@ -8,7 +8,7 @@ import LightbulbOutline from '../icons/light-bulb-outline';
 
 const HeaderTitle = styled(Title)`
     flex: 1;
-    font-size: 18px
+    font-size: 18px;
 `;
 
 @inject('rootStore')
@@ -31,9 +31,7 @@ export class Header extends React.Component {
                 <Toolbar>
                     <NavButton />
 
-                    <HeaderTitle color="inherit">
-                        {title}
-                    </HeaderTitle>
+                    <HeaderTitle color="inherit">{title}</HeaderTitle>
 
                     <DepartmentsButton />
                     <CartButton />
